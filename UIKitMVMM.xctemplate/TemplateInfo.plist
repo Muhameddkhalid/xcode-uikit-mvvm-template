@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>UIKit MVVM Template generating ViewController, ViewModel, ViewModelType, and XIB with proper File</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Summary</key>
+	<string>MVVM Module</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Required</key>
+			<true/>
+			<key>Name</key>
+			<string>Module Name</string>
+			<key>Description</key>
+			<string>The base name of the MVVM module (e.g., UserProfile)</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+	</array>
+	<key>Nodes</key>
+	<array>
+		<string>___FILEBASENAME___ViewModel.swift</string>
+		<string>___FILEBASENAME___ViewModelType.swift</string>
+		<string>___FILEBASENAME___ViewController.swift</string>
+		<string>___FILEBASENAME___ViewController.xib</string>
+		<string>___FILEBASENAME___View.swift</string>
+	</array>
+</dict>
+</plist>
