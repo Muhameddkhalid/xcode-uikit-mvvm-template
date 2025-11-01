@@ -2,7 +2,7 @@
 
 echo "===== 🧩 Xcode UIKit MVVM Template Installer ====="
 echo ""
-echo "👉 Drag & drop the MVVMModule.xctemplate folder here, then press [Enter]:"
+echo "👉 Drag & drop the UIKitMVMM.xctemplate folder here, then press [Enter]:"
 read TEMPLATE_SRC
 
 TEMPLATE_SRC=$(echo "$TEMPLATE_SRC" | sed 's/\\//g' | xargs)
@@ -12,7 +12,7 @@ if [ ! -d "$TEMPLATE_SRC" ]; then
     exit 1
 fi
 
-TEMPLATE_DST="$HOME/Library/Developer/Xcode/Templates/File Templates/MVVMModule/"
+TEMPLATE_DST="$HOME/Library/Developer/Xcode/Templates/MVVMModule/UIKitMVMM.xctemplate"
 
 mkdir -p "$TEMPLATE_DST"
 
@@ -22,4 +22,4 @@ echo ""
 echo "✅ Done! MVVM Template installed successfully."
 echo "📂 Path: $TEMPLATE_DST"
 echo ""
-echo "🎉 Open Xcode → File → New → File → MVVM Module"
+echo "🎉 Open Xcode → File → New → File → MVVMModule"
